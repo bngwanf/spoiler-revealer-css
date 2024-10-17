@@ -1,0 +1,42 @@
+/*
+The challenge here is to creeate a spoiler revealer.
+There is the minimalist forum design, and when you hover over
+one of the black rectangles, it will reveal the spoilers for some famous
+movies. Also there's a nice transition delay when you hover over the black rectangles. 
+The blacked out text for each 'card' is as follows 1. "the ruins of the Statue of Liberty. 
+The Planet of the Apes is Earth!" 2. "is made of people!" 3. "Luke Skywalker's father!"
+Hint: You'll want to look into using the CSS transition property to achieve that effect.
+
+*/
+
+body {
+    font-family: Arial, sans-serif; /* Sets a nice font for the body */
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+.post {
+    background-color: #d3d3d3; /* Grey background for each post */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between posts */
+}
+
+.spoiler {
+    color: transparent; /* Hide text by default */
+    background-color: #000000;
+    padding: 0 5px;
+    border-radius: 3px;
+    transition: 1.0s ease;
+}
+
+.spoiler:hover {
+    color: #000000; /* Show black text on hover */
+    background-color: transparent;
+}
+
+p {
+    line-height: 1.5em; /* Line height for better readability */
+    margin: 0; /* Remove default margin */
+}
